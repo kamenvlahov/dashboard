@@ -45,9 +45,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "build": "vite build",
-        "postinstall": "npm install && npm run build"
+        ]
     },
     "extra": {
         "laravel": {
