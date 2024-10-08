@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('dashboard_cells', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->autoIncrement();
+            $table->string('title', 255)->nullable();
             $table->string('url', 255)->nullable();
             $table->unsignedBigInteger('color_id')->nullable();
             $table->timestamps();
